@@ -1,0 +1,131 @@
+/* ===== TEMA ===== */
+:root {
+  --bg: #131313;
+  --fg: #e6edf3;
+  --muted: #8892b0;
+  --accent: #39d353;
+  --card-bg: #1a1a1a;
+  --border: #252525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('imgs/bg.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  color: var(--fg);
+  font-family: 'Satoshi', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+/* Sobreposição escura para legibilidade */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.484);
+  z-index: -1;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* AVATAR */
+.avatar {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 100px rgba(255, 255, 255, 0.588));
+}
+
+/* USERNAME TEXT */
+.username-text {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 50px;
+  color: #ffffff; /* Branco puro */
+  display: inline-block;
+  position: relative; /* Para que os elementos filhos posicionados absolutamente sejam relativos a ele */
+  z-index: 1;
+  background-image: url("imgs/effect.gif");
+  background-repeat:repeat;
+  text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+/* SOCIAL ICONS — SEM CÍRCULO, APENAS ÍCONE */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* TODOS OS ÍCONES TÊM EXATAMENTE O MESMO TAMANHO */
+.social-icon svg {
+  width: 35px;      /* Tamanho fixo do SVG */
+  height: 35px;     /* Tamanho fixo do SVG */
+  fill: currentColor;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
+}
+
+/* Ajustes individuais para alinhar visualmente */
+.social-icon.spotify svg     { transform: scale(1.15); }
+.social-icon.instagram svg  { transform: scale(1.15); }
+.social-icon.lastfm svg     { transform: scale(1.25); }  /* Aumentado mais */
+.social-icon.steam svg      { transform: scale(1.25); }  /* Aumentado mais */
+.social-icon.github svg      { transform: scale(1.25); }  /* Aumentado mais */
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .username-text {
+    font-size: 28px;
+  }
+  .social-links {
+    gap: 1rem;
+  }
+}
+
