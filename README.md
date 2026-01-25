@@ -10,4 +10,4 @@ Because it has forgotten what color it once was.
 - [ ] Projects tab
 - [ ] Personal Journal tab
 - [ ] Theme toggle
-- [ ] Liquid glass? morth effect?
+- [ ] Liquid glass?
