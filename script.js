@@ -86,3 +86,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   animateTitle();
 });
+
+document.querySelectorAll('.social-icon, .avatar').forEach(el => {
+  el.addEventListener('touchstart', () => {
+    el.style.transform = 'scale(0.95)';
+  });
+  el.addEventListener('touchend', () => {
+    el.style.transform = 'scale(1)';
+  });
+});
