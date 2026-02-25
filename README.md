@@ -7,6 +7,7 @@ Because it has forgotten what color it once was.
 
 ***
 - [X] Social media
+- [ ] Bio
 - [ ] Projects tab
 - [ ] Personal Journal tab
 - [ ] Theme toggle
