@@ -9,8 +9,7 @@ Because it has forgotten what color it once was.
 
 - [x] Social media
 - [x] Nav bar
-- [ ] Bio
+- [ ] About tab
 - [ ] Projects tab
 - [ ] Personal Journal tab
 - [ ] Theme toggle
-- [ ] Liquid glass?
