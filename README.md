@@ -9,7 +9,7 @@ Because it has forgotten what color it once was.
 
 - [x] Social media
 - [x] Nav bar
-- [ ] About tab
-- [ ] Projects tab
+- [x] About tab
+- [x] Projects tab
 - [ ] Personal Journal tab
 - [ ] Theme toggle
