@@ -3,6 +3,12 @@
     "id": "primeiro-post",
     "title": "primeiro post",
     "subtitle": "Post teste.",
-    "date": "2026-05-28"
+    "date": "2026-06-01"
+  },
+  {
+    "id": "primeiro-post-oficial",
+    "title": "primeiro post oficial.",
+    "subtitle": "agora sim",
+    "date": "2026-06-02"
   }
 ]
