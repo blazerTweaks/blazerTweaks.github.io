@@ -10,15 +10,25 @@
       href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="icon" type="image/svg+xml" href="src/.svg" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+    <link rel="icon" type="image/svg+xml" href="imgs/.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="about/about.css" />
+    <link rel="stylesheet" href="journal/journal.css" />
   </head>
 
   <body>
     <header>
       <nav class="outro">
-        <img id="back-btn" src="src/chevron-left.svg" alt="" class="back-btn" />
+        <img
+          id="back-btn"
+          src="src/imgs/chevron-left.svg"
+          alt=""
+          class="back-btn"
+        />
         <h2>Journal</h2>
         <h2>Projects</h2>
         <h2>About</h2>
@@ -27,7 +37,7 @@
 
     <main>
       <div class="profile-container">
-        <img src="src/avatar.gif" alt="Avatar" class="avatar" />
+        <img src="src/imgs/avatar.gif" alt="Avatar" class="avatar" />
 
         <div class="username-text">interlude</div>
 
@@ -145,7 +155,7 @@
     <template id="section-journal">
       <div class="page-content">
         <h1 class="page-title">journal</h1>
-        <p class="page-text">nothing</p>
+        <div id="journal-container"></div>
       </div>
     </template>
 
@@ -158,11 +168,16 @@
 
     <template id="section-about">
       <div class="page-content">
-        <h1 class="page-title">about</h1>
-        <p class="page-text">nothing</p>
+        <div id="about-container"></div>
       </div>
     </template>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
+    <script src="journal/journal.js"></script>
+    <script src="about/about.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>

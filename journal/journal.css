@@ -1,0 +1,245 @@
+/* ============================================================
+   JOURNAL STYLES — cole no final do seu style.css
+   ============================================================ */
+
+/* Lista de entradas */
+.journal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.journal-entry {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  grid-template-rows: auto auto;
+  align-items: baseline;
+  gap: 0 12px;
+}
+
+.journal-entry:last-child {
+  border-bottom: none;
+}
+
+.journal-entry:hover {
+  opacity: 0.6;
+}
+
+.journal-date {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  font-family: "Satoshi", sans-serif;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.journal-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+}
+
+.journal-tags {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.journal-tag {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.25);
+  font-family: "Satoshi", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.journal-tag::before {
+  content: "#";
+}
+
+/* Post aberto */
+.journal-post {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.journal-back {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.35);
+  font-family: "Satoshi", sans-serif;
+  font-size: 12px;
+  padding: 0;
+  width: fit-content;
+  transition: color 0.15s ease;
+  letter-spacing: 0.02em;
+}
+
+.journal-back:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.journal-post-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.journal-post-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+}
+
+/* Markdown body */
+.markdown-body {
+  font-family: "Satoshi", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.markdown-body p {
+  margin: 0 0 1em;
+}
+
+.markdown-body h2,
+.markdown-body h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  margin: 1.4em 0 0.5em;
+}
+
+.markdown-body h2 {
+  font-size: 15px;
+}
+.markdown-body h3 {
+  font-size: 13.5px;
+}
+
+.markdown-body strong {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.markdown-body em {
+  font-style: italic;
+}
+
+.markdown-body a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.markdown-body hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 1.5em 0;
+}
+
+.markdown-body blockquote {
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+  padding-left: 14px;
+  margin: 1em 0;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 1.4em;
+  margin: 0.5em 0 1em;
+}
+
+.markdown-body li {
+  margin-bottom: 0.3em;
+}
+
+.markdown-body code {
+  font-family: monospace;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.journal-empty {
+  color: rgba(255, 255, 255, 0.25);
+  font-family: "Satoshi", sans-serif;
+  font-size: 13px;
+}
+
+/* subtítulo na lista */
+.journal-entry-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.journal-subtitle {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.28);
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+}
+
+/* subtítulo no post aberto */
+.journal-post-subtitle {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.35);
+  font-family: "Satoshi", sans-serif;
+  margin: 2px 0 0;
+  font-style: italic;
+}
+
+.journal-date {
+  font-size: 13.5px;
+}
+
+.journal-title {
+  font-size: 14.5px;
+}
+
+.journal-subtitle {
+  font-size: 13px;
+}
+
+.journal-post-title {
+  font-size: 20px;
+}
+
+.journal-post-subtitle {
+  font-size: 13px;
+}
+
+.markdown-body {
+  font-size: 15px;
+}
+
+.journal-post {
+  max-width: 70vh;
+  overflow-x: auto;
+}
+
+.markdown-body pre {
+  background: rgba(22, 22, 22, 0.75) !important;
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.markdown-body pre code {
+  background: transparent !important;
+}

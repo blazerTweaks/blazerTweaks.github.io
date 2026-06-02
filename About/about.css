@@ -1,0 +1,159 @@
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 700px;
+}
+
+.about-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding-bottom: 30px;
+}
+
+.about-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about-top-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.about-nome {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.about-ocupacao {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Satoshi", sans-serif;
+  margin: 0 0 6px;
+}
+
+.about-bio {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+}
+
+.about-body {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.about-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.about-block:last-child {
+  margin-bottom: 0;
+}
+
+.about-block-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Satoshi", sans-serif;
+}
+
+.about-simple-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-simple-list li {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: "Satoshi", sans-serif;
+}
+
+.about-simple-list li::before {
+  content: "- ";
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.about-now {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-now-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.about-now-key {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Satoshi", sans-serif;
+}
+
+.about-now-val {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "Satoshi", sans-serif;
+}
+
+.about-favs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.about-fav-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.about-fav-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Satoshi", sans-serif;
+}
+
+.about-fav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-fav-list li {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Satoshi", sans-serif;
+}
+
+.about-fav-list li::before {
+  content: "• ";
+  color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,21 @@
+{
+  "avatar": "src/imgs/avatar.gif",
+  "nome": "interlude",
+  "ocupacao": "desenvolvedor em formação",
+  "bio": "Olá! Meu nome é Blazer. Estou estudando programação com foco em desenvolvimento web. Atualmente estou construindo projetos próprios para desenvolver minhas habilidades e criar um portfólio para futuras oportunidades na área de tecnologia.",
+  "informacoes": {
+    "idade": "18 anos",
+    "localizacao": "Rio Grande do Sul, Brasil",
+    "ocupacao": "Estudante"
+  },
+  "favoritos": {
+    "artistas": ["Bunii", "Bladee", "Isobel", "Lucy Bedroque"],
+    "jogos": ["Silent Hill 3", "Elden Ring", "Blue prince", "Cairn"],
+    "animes": ["Sword Art Online", "Attack On Titan", "Hell's paradise", "Code Geass", "Steins;Gate"]
+  },
+  "atualmente": {
+    "lendo": "Hell's paradise",
+    "assistindo": "Witch Hat Atelier",
+    "jogando": "Danganronpa Trigger Havoc"
+  }
+}
