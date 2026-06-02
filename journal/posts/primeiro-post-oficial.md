@@ -5,3 +5,7 @@ Terminei de assistir Hell's Paradise semana passada e fiquei com um sentimento d
 gabimaru é muito goat
 
 ![goatmaru](https://static.wikia.nocookie.net/jigokuraku/images/6/64/Gabimaru_with_glasses_%28Anime%29.png/revision/latest/scale-to-width-down/250?cb=20260208192609)
+
+---
+
+E hoje tem state of play!! dito isso bloodborne 2 e kingdom hearts 4!!
