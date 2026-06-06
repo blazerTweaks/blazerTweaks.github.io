@@ -7,8 +7,19 @@
   },
   {
     "id": "primeiro-post-oficial",
-    "title": "primeiro post oficial.",
+    "title": "primeiro post oficial",
     "subtitle": "agora sim",
     "date": "2026-06-02"
+  },
+  {
+    "id": "jogo-viciante",
+    "title": "Joginho viciante",
+    "date": "2026-06-03"
+  },
+  {
+    "id": "compras-do-japão",
+    "title": "compras do japão",
+    "date": "2026-06-04",
+    "editado": "2026-06-04"
   }
 ]

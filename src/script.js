@@ -123,6 +123,10 @@ document.addEventListener("DOMContentLoaded", function () {
       renderAbout(document.getElementById("about-container"));
     }
 
+    if (section === "projects") {
+      renderProjects(document.getElementById("projects-container"));
+    }
+
     document.querySelectorAll("nav h2").forEach((h2) => {
       h2.classList.toggle("nav-active", navMap[h2.textContent] === section);
     });

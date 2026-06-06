@@ -103,6 +103,7 @@ async function renderJournal(container) {
         <button class="journal-back">← voltar</button>
         <div class="journal-post-header">
           <span class="journal-date">${formatDate(post.date)}</span>
+          ${post.editado ? `<span class="journal-edited">editado em ${formatDate(post.editado)}</span>` : ""}
           <h2 class="journal-post-title">${post.title}</h2>
           ${post.subtitle ? `<p class="journal-post-subtitle">${post.subtitle}</p>` : ""}
           ${

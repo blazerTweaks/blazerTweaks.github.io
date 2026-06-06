@@ -1,0 +1,146 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Card */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: opacity 0.15s ease, background 0.15s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  opacity: 0.7;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+/* Topo: nome + badge de status */
+.project-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.project-card-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Badge de status */
+.project-status {
+  font-size: 9.5px;
+  font-family: "Satoshi", sans-serif;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.status-done {
+  background: rgba(57, 211, 83, 0.1);
+  color: rgba(57, 211, 83, 0.75);
+  border: 1px solid rgba(57, 211, 83, 0.2);
+}
+
+.status-wip {
+  background: rgba(210, 153, 57, 0.1);
+  color: rgba(210, 153, 57, 0.8);
+  border: 1px solid rgba(210, 153, 57, 0.2);
+}
+
+.status-paused {
+  background: rgba(100, 100, 100, 0.12);
+  color: rgba(200, 200, 200, 0.5);
+  border: 1px solid rgba(150, 150, 150, 0.15);
+}
+
+.status-dropped {
+  background: rgba(211, 57, 57, 0.08);
+  color: rgba(211, 80, 80, 0.6);
+  border: 1px solid rgba(211, 57, 57, 0.15);
+}
+
+.status-default {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Descrição */
+.project-card-desc {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.28);
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Rodapé: linguagem + tags */
+.project-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.project-card-lang {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.22);
+  font-family: "Satoshi", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.project-tag {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "Satoshi", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.project-tag::before {
+  content: "#";
+}
+
+/* Estados de loading/erro */
+.projects-empty,
+.projects-loading,
+.projects-error {
+  color: rgba(255, 255, 255, 0.25);
+  font-family: "Satoshi", sans-serif;
+  font-size: 13px;
+}
+
+/* Responsivo: 1 coluna em telas pequenas */
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

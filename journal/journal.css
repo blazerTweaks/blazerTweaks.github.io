@@ -243,3 +243,10 @@
 .markdown-body pre code {
   background: transparent !important;
 }
+
+.journal-edited {
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "Satoshi", sans-serif;
+  font-style: italic;
+}

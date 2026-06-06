@@ -1,0 +1,16 @@
+[
+  {
+    "name": "blazerTweaks.github.io",
+    "desc": "Site pessoal",
+    "url": "https://github.com/blazerTweaks/blazerTweaks.github.io",
+    "lang": ["HTML", "CSS", "JS"],
+    "status": "concluído"
+  },
+  {
+    "name": "BuzzHeavier-Manager",
+    "desc": "Interface web para gerenciar arquivos no buzzHeavier.",
+    "url": "https://github.com/blazerTweaks/BuzzHeavier-Manager",
+    "lang": "React",
+    "status": "em andamento"
+  }
+]
