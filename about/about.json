@@ -14,8 +14,8 @@
     "animes": ["Sword Art Online", "Attack On Titan", "Hell's paradise", "Code Geass", "Steins;Gate"]
   },
   "atualmente": {
-    "lendo": "Hell's paradise",
-    "assistindo": "Witch Hat Atelier",
-    "jogando": "Danganronpa Trigger Havoc"
+    "lendo": ["Hell's paradise"],
+    "assistindo": ["Witch Hat Atelier", "Wistoria: Wand and Sword", "Re:zero Season 4"],
+    "jogando": ["Danganronpa Trigger Havoc"]
   }
 }

@@ -51,31 +51,22 @@ async function renderAbout(container) {
               <span class="about-block-title">atualmente</span>
               <div class="about-now">
                 ${
-                  data.atualmente.lendo
-                    ? `
-                  <div class="about-now-row">
-                    <span class="about-now-key">lendo</span>
-                    <span class="about-now-val">${data.atualmente.lendo}</span>
-                  </div>`
-                    : ""
-                }
-                ${
-                  data.atualmente.assistindo
-                    ? `
-                  <div class="about-now-row">
-                    <span class="about-now-key">assistindo</span>
-                    <span class="about-now-val">${data.atualmente.assistindo}</span>
-                  </div>`
-                    : ""
-                }
-                ${
-                  data.atualmente.jogando
-                    ? `
-                  <div class="about-now-row">
-                    <span class="about-now-key">jogando</span>
-                    <span class="about-now-val">${data.atualmente.jogando}</span>
-                  </div>`
-                    : ""
+                  (() => {
+                    const renderNowRows = (key, val) => {
+                      if (!val) return '';
+                      const items = Array.isArray(val) ? val : [val];
+                      return items.map((item, i) => `
+                        <div class="about-now-row">
+                          <span class="about-now-key">${i === 0 ? key : ''}</span>
+                          <span class="about-now-val">${item}</span>
+                        </div>`).join('');
+                    };
+                    return [
+                      renderNowRows('lendo', data.atualmente.lendo),
+                      renderNowRows('assistindo', data.atualmente.assistindo),
+                      renderNowRows('jogando', data.atualmente.jogando),
+                    ].join('');
+                  })()
                 }
               </div>
             </div>
