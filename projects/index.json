@@ -11,6 +11,13 @@
     "desc": "Interface web para gerenciar arquivos no buzzHeavier.",
     "url": "https://github.com/blazerTweaks/BuzzHeavier-Manager",
     "lang": "React",
+    "status": "pausado"
+  },
+  {
+    "name": "aidoku-pt-br-sources",
+    "desc": "Lista de fontes para o Aidoku em Português do Brasil.",
+    "url": "https://github.com/blazerTweaks/aidoku-pt-br-sources",
+    "lang": "Rust",
     "status": "em andamento"
   }
 ]

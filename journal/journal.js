@@ -1,5 +1,3 @@
-// journal.js — renderiza o journal buscando posts via fetch
-
 async function renderJournal(container) {
   container.innerHTML = `<div class="journal-loading">carregando...</div>`;
 
@@ -39,6 +37,7 @@ async function renderJournal(container) {
   }
 
   function renderList() {
+    localStorage.removeItem("bt_journal_post");
     container.innerHTML = `
       <div class="journal-list">
         ${posts
@@ -71,6 +70,7 @@ async function renderJournal(container) {
   }
 
   async function renderPost(post) {
+    localStorage.setItem("bt_journal_post", post.id);
     container.innerHTML = `<div class="journal-loading">carregando...</div>`;
 
     let markdown;
@@ -119,6 +119,15 @@ async function renderJournal(container) {
     container
       .querySelector(".journal-back")
       .addEventListener("click", renderList);
+  }
+
+  const savedPostId = localStorage.getItem("bt_journal_post");
+  if (savedPostId) {
+    const savedPost = posts.find((p) => p.id === savedPostId);
+    if (savedPost) {
+      renderPost(savedPost);
+      return;
+    }
   }
 
   renderList();

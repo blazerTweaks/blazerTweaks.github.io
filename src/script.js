@@ -1,6 +1,4 @@
-// script.js
 document.addEventListener("DOMContentLoaded", function () {
-  // ── LETTER HOVER NO USERNAME ──────────────────────────────────────────────
   document.querySelectorAll(".username-text").forEach((el) => {
     const text = el.textContent;
     el.innerHTML = "";
@@ -20,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // ── HOVER NO AVATAR ───────────────────────────────────────────────────────
   const avatar = document.querySelector(".avatar");
   if (avatar) {
     avatar.style.transition =
@@ -33,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ── HOVER NOS ÍCONES ──────────────────────────────────────────────────────
   document.querySelectorAll(".social-icon").forEach((icon) => {
     icon.style.transition =
       "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2)";
@@ -45,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ── TOUCH FEEDBACK ────────────────────────────────────────────────────────
   document.querySelectorAll(".social-icon, .avatar").forEach((el) => {
     el.addEventListener("touchstart", () => {
       el.style.transform = "scale(0.95)";
@@ -55,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ── TÍTULO ANIMADO ────────────────────────────────────────────────────────
   const originalTitle = "interlude";
   let index = 1;
   let isDeleting = false;
@@ -86,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   animateTitle();
 
-  // ── NAVEGAÇÃO COM TRANSIÇÃO ───────────────────────────────────────────────
   const main = document.querySelector("main");
 
   const sections = {
@@ -110,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function navigateTo(section) {
     if (section === currentSection) return;
     currentSection = section;
+    localStorage.setItem("bt_section", section);
 
     if (section === "journal") {
       main.innerHTML = journalTemplate;
@@ -150,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
   backBtn.style.display = "none";
   backBtn.addEventListener("click", () => navigateTo("home"));
 
-  // ── EFEITOS DA HOME ───────────────────────────────────────────────────────
   function initHomeEffects() {
     document.querySelectorAll(".username-text").forEach((el) => {
       const text = el.textContent;
@@ -202,5 +195,10 @@ document.addEventListener("DOMContentLoaded", function () {
         el.style.transform = "scale(1)";
       });
     });
+  }
+
+  const savedSection = localStorage.getItem("bt_section");
+  if (savedSection && savedSection !== "home") {
+    navigateTo(savedSection);
   }
 });
